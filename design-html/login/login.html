@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>唯医会诊 - 登录</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/pages/login/login.css">
+</head>
+<body>
+<section class="main-inner">
+    <header class="main-header">
+        <article class="main-header-title">
+            <i class="icon-logo"></i>
+            <h1>唯医会诊</h1>
+        </article>
+    </header>
+    <section class="login-content-inner">
+        <section class="login-content" style="display: none;">
+            <header class="login-title">
+                用户登录
+            </header>
+            <section class="login-input-item">
+                <h3><span>用户名</span></h3>
+                <input type="text" class="login-input-box" id="ev-username">
+                <p class="error-text icon-errorTips" id="ev-username-error"><span>密码不能为空</span></p>
+            </section>
+            <section class="login-input-item">
+                <h3><span>密码</span>
+                    <p class="save-password icon-select-normal active"><span>记住密码</span></p></h3>
+                <input type="text" class="login-input-box" id="ev-username">
+                <p class="error-text icon-errorTips" id="ev-username-error"><span>密码不能为空</span></p>
+            </section>
+            <button class="login-btn btn-primary">登录</button>
+            <footer class="login-forget-password"><a href="">忘记密码</a></footer>
+        </section>
+        <section class="login-content">
+            <header class="login-title">忘记密码</header>
+            <section class="login-input-item" data-path="1">
+                <h3><span>用户名</span></h3>
+                <input type="text" class="login-input-box" id="ev-username">
+                <p class="error-text icon-errorTips" id="ev-username-error"><span>密码不能为空</span></p>
+            </section>
+            <section class="login-input-item" data-path="1">
+                <h3><span>密码</span></h3>
+                <input type="text" class="login-input-box login-input-validate-code" id="ev-username">
+                <button class="login-send-validate-code btn-primary">获取验证码</button>
+                <p class="error-text icon-errorTips" id="ev-username-error"><span>密码不能为空</span></p>
+            </section>
+            <button class="login-btn btn-primary">提交</button>
+        </section>
+        <section class="login-content" style="display: none;">
+            <header class="login-title">忘记密码</header>
+            <section class="login-input-item" data-path="2">
+                <h3><span>用户名</span></h3>
+                <input type="text" class="login-input-box" id="ev-username">
+                <p class="error-text icon-errorTips" id="ev-username-error"><span>密码不能为空</span></p>
+            </section>
+            <section class="login-input-item" data-path="2">
+                <h3><span>密码</span></h3>
+                <input type="text" class="login-input-box" id="ev-username">
+                <p class="error-text icon-errorTips" id="ev-username-error"><span>密码不能为空</span></p>
+            </section>
+            <button class="login-btn btn-primary">提交</button>
+        </section>
+        <section class="login-content" style="display: none;">
+            <figure class="login-fix-success-img">
+                <img src="/image/img00/login/login_ modify_finish.png" alt="">
+            </figure>
+            <figcaption class="login-fix-success-content">
+                <h4>
+                    <span>成功修改密码，<em>3</em>秒后将</span><a href="">自动登录</a>
+                </h4>
+                <p>下次登录请使用新密码</p>
+            </figcaption>
+        </section>
+    </section>
+</section>
+</body>
+</html>

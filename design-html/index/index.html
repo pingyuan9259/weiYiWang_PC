@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/pages/index/index.css">
+</head>
+
+<body>
+<!--总容器-->
+<section class="main-inner" data-template="tpl-inner">
+    <!--固定头部-->
+    <header class="main-header" data-template="tpl-header">
+
+    </header>
+    <!--中心区域-->
+    <section class="center-inner">
+        <!--对话区域-->
+        <section class="center-inner-message">
+            <section class="layout-helper">
+                <article class="messageList-box">
+                </article>
+                <section class="user-controller" data-template="tpl-bottom-controller">
+
+                </section>
+            </section>
+        </section>
+        <!--患者列表-->
+        <aside class="center-inner-userlist" data-template="tpl-userList">
+
+        </aside>
+        <!--病历单-->
+        <aside class="medical-record" data-template="tpl-medical-record">
+
+        </aside>
+    </section>
+</section>
+<!--个人设置-->
+<script src="/js/third-party/jquery/jquery-2.1.0.min.js"></script>
+<script src="/js/third-party/nim/NIM_Web_NIM_v3.4.0.js"></script>
+<script src="/js/plugins/plugins.tabView.js"></script>
+<script src="/js/plugins/plugins.downSelector.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/third-party/require/require.js"></script>
+<script src="/js/scene/index/scene.index.main.js" data-main="js/main"></script>
+
+</body>
+
+</html>

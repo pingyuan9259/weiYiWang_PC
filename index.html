@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/pages/index/index.css">
+</head>
+
+<body>
+<!--总容器-->
+<section class="main-inner" data-template="tpl-inner">
+    <!--固定头部-->
+    <header class="main-header" data-template="tpl-header">
+
+    </header>
+    <!--中心区域-->
+    <section class="center-inner">
+        <!--对话区域-->
+        <section class="center-inner-message">
+            <section class="layout-helper">
+                <article class="messageList-box">
+                </article>
+                <section class="user-controller" data-template="tpl-bottom-controller">
+
+                </section>
+            </section>
+        </section>
+        <!--患者列表-->
+        <aside class="center-inner-userlist" data-template="tpl-userList">
+
+        </aside>
+        <!--病历单-->
+        <aside class="medical-record" data-template="tpl-medical-record">
+
+        </aside>
+    </section>
+</section>
+
+<!--<section class="maskers infoBox-tips show">-->
+    <!--<section class="infoBox-inner">-->
+        <!--<article class="infoBox-content">-->
+            <!--<section>-->
+                <!--<h2>李铁根咨询历史</h2>-->
+            <!--</section>-->
+        <!--</article>-->
+        <!--<section class="check-history">-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--<section class=" check-history-info check-history-header">-->
+                        <!--<span class="check-history-title">诊断结论</span><span class="check-history-text">患者提交病例时间</span>-->
+                    <!--</section>-->
+
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<section class="check-history-info">-->
+                        <!--<span class="check-history-title"><i class="icon-downArrow"></i>膝关节不适</span><span class="check-history-text">2017年12月15日</span>-->
+                    <!--</section>-->
+                    <!--<article class="check-history-show">-->
+                        <!--<h3>咨询对话历史</h3>-->
+                        <!--<section class="check-history-talk">-->
+                            <!--<ul>-->
+                                <!--<li>-->
+                                    <!--<article>-->
+                                        <!--<header>李铁根  9：30</header>-->
+                                        <!--<p>李铁根病例</p>-->
+                                    <!--</article>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<article>-->
+                                        <!--<header>王医生  9：31</header>-->
+                                        <!--<p>什么时候开始疼的？</p>-->
+                                    <!--</article>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<article>-->
+                                        <!--<header>李铁根  9：32</header>-->
+                                        <!--<p>疼了十几年了。</p>-->
+                                    <!--</article>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</section>-->
+                    <!--</article>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<section class="check-history-info">-->
+                        <!--<span class="check-history-title"><i class="icon-downArrow"></i>腰间盘突出 3级</span><span class="check-history-text">2014年11月15日</span>-->
+                    <!--</section>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<section class="check-history-info">-->
+                        <!--<span class="check-history-title"><i class="icon-downArrow"></i>腱鞘炎 1级</span><span class="check-history-text">2011年12月15日</span>-->
+                    <!--</section>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</section>-->
+    <!--</section>-->
+    <!--<section class="mask-close"></section>-->
+<!--</section>-->
+<!--<section class="mask-background show"></section>-->
+
+
+<!--个人设置-->
+<script src="/js/third-party/nim/NIM_Web_NIM_v3.4.0.js"></script>
+<script src="/js/plugins/plugins.tabView.js"></script>
+<script src="/js/third-party/require/require.js" data-main="js/scene/main"></script>
+<script>
+    $(function () {
+        $('body').on('click', '.medical-record-img', function () {
+
+            var htmlText = '';
+
+            common.gbw.infoBox(htmlText);
+        });
+
+    })
+</script>
+</body>
+
+</html>

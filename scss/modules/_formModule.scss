@@ -1,0 +1,171 @@
+@charset "utf-8";
+/**
+* @Desc：
+* @Usage:
+* @Notify：
+* @Depend：
+*
+* Created by qiangkailiang on 2017/3/6
+*/
+
+//登录内容框
+.login-content-inner {
+  height: 100%;
+  text-align: center;
+  background-color: #f6f9fa;
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+
+.login-content {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 500px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 70px 50px 50px;
+  .login-title {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    padding-bottom: 8px;
+
+  }
+}
+
+.login-input-item {
+  margin: 32px 0;
+  & > h3 {
+    font-size: 14px;
+    color: #909090;
+    @include clearfix();
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .login-input-box {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #E1E2E7;
+    padding: 13.5px 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    &:focus {
+      border: 1px solid #7A8EC1;
+    }
+    &.login-input-validate-code{
+      width: 290px;
+    }
+  }
+  .save-password {
+    float: right;
+    cursor: pointer;
+  }
+  .error-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #F23E34;
+    & > span {
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+  }
+}
+
+.icon-select-normal {
+  & > span {
+    vertical-align: middle;
+    padding-left: 8px;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background: url("/image/img00/login/1_choose_sel_small.png");
+    background-size: 100% 100%;
+  }
+  &.active {
+    &:before {
+      background: url("/image/img00/login/1_choose_nor_small.png");
+    }
+  }
+}
+
+.icon-errorTips {
+  &:before {
+    content: '';
+    @include square(14px);
+    display: inline-block;
+    vertical-align: middle;
+    background: url("/image/img00/login/login_ error message.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.login-btn{
+  width: 100%;
+}
+.login-forget-password{
+  text-align: center;
+  margin-top: 24px;
+  position: relative;
+  & > a{
+    font-size: 14px;
+    color: #7A8EC1;
+  }
+  &:before,&:after{
+    content:"";
+    position: absolute;
+    width: 158px;
+    height: 1px;
+    background: #E1E2E7;
+    top: 50%;
+    margin-top: -0.5px;
+  }
+  &:before{
+    left: 0;
+  }
+  &:after{
+    right: 0;
+  }
+}
+
+
+
+.login-send-validate-code{
+  float: right;
+}
+
+.login-fix-success-img{
+  text-align: center;
+  & > img{
+    width: 120px;
+    height: 120px;
+    vertical-align: top;
+  }
+}
+.login-fix-success-content{
+  text-align: center;
+  margin-top: 80px;
+  & > h4{
+    font-weight: normal;
+    color: #555;
+    font-size: 18px;
+    em{
+      font-style: normal;
+    }
+    a{
+      color: #7A8EC1;
+    }
+  }
+  & > p{
+    font-size: 14px;
+    margin-top:16px;
+    color: #808080;
+  }
+}

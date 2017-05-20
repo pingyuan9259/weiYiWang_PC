@@ -1,0 +1,137 @@
+@charset "utf-8";
+/**
+ * @name: IM接受病历单
+ * @desc:
+ * @example:
+ * @depend:
+ * @date: 2017/03/05
+ * @author: qiangkailiang
+ */
+
+
+.medical-record-result {
+  text-align: center;
+  .medical-record-result-imgBox {
+    text-align: center;
+    max-width: 310px;
+    display: inline-block;
+  }
+  .medical-record-result-img {
+    display: inline-block;
+    vertical-align: top;
+    & > img {
+      width: 150px;
+      height: 150px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.medical-record-result-content {
+  max-width: 310px
+}
+
+//智能报告
+.messageList-item-triage-report {
+  & > h3 {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .messageList-item-triage-report-img {
+    text-align: center;
+    img {
+      width: 300px;
+      vertical-align: top;;
+    }
+  }
+}
+
+//备注
+.medical-record-remark {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: #fff;
+  &-header {
+    background-color: #eceff6;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    @include clearfix();
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    & > h3 {
+      font-weight: normal;
+      font-size: 14px;
+      display: inline-block;
+      color: #6B748C;
+      letter-spacing: 0;
+      line-height: 40px;
+      i{
+        background: url("/image/img00/employee/home_note_default.png") no-repeat;
+        width:18px;
+        height:18px;
+        display: inline-block;
+        top:0;
+        margin-right:4px;
+        cursor:pointer;
+        vertical-align: baseline;
+      }
+
+    }
+    .remark-build {
+      float: left;
+      font-size: 14px;
+      color: #6B748C;
+      letter-spacing: 0;
+      line-height: 40px;
+      i{
+        background: url("/image/img00/employee/home_note_add.png") no-repeat;
+        width:12px;
+        height:12px;
+        display: inline-block;
+        top:0;
+        margin-right:4px;
+        cursor:pointer;
+        vertical-align: baseline;
+      }
+    }
+    .remark-toggle {
+      float: right;
+      font-size: 14px;
+      color: #6B748C;
+      letter-spacing: 0;
+      line-height: 40px;
+      i{
+        background: url("/image/img00/employee/arrow_pack_down.png") no-repeat;
+        width:12px;
+        height:12px;
+        display: inline-block;
+        top:0;
+        margin-right:4px;
+        cursor:pointer;
+        vertical-align: middle;
+      }
+    }
+  }
+  &-content {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .remark-content-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+    & > .text {
+      font-size: 14px;
+      color: #222;
+    }
+    & > .time {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+  }
+}

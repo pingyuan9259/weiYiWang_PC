@@ -1,0 +1,119 @@
+.check-suggestion{
+  display: none;
+  &.show{
+    display: block;
+  }
+}
+.check-suggestion-box{
+  position: absolute;
+  top: 52px;
+  bottom: 52px;
+  left: 50%;
+  width: 800px;
+  margin-left:-400px;
+  background-color: #fff;
+
+  .window-close{
+    position: absolute;
+    right: -34px;
+    cursor: pointer;
+  }
+}
+.check-suggestion-title{
+  padding:20px 40px;
+  background: #D9DFEC;
+  text-align: center;
+  color: #222;
+  font-size: 18px;
+}
+.check-suggestion-inner{
+  overflow: auto;
+  max-height: 543px;
+}
+.check-suggestion-item{
+  margin: 40px 0;
+  box-sizing: border-box;
+  &-title{
+    color: #555;
+    padding:0 40px;
+    margin:20px 0;
+    & > span{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left:4px;
+      font-weight: bold;
+    }
+    &:before{
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width:2px;
+      height: 12px;
+      background-color: #7A8EC1;
+
+    }
+  }
+}
+.patient-message{
+  padding:20px 40px;
+  &-img{
+    @include circle(88px);
+    display: inline-block;
+    vertical-align: top;
+    & > img{
+      @include circle(88px);
+      vertical-align: top;
+    }
+  }
+  &-content{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    width: 80%;
+    & > h3{
+      font-size: 22px;
+      color: #222;
+    }
+    .disease-base-msg{
+      margin-top: 28px;
+      margin-bottom: 20px;
+      span{
+        vertical-align: middle;
+      }
+      & > article{
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1.5;
+        width: 93%;
+      }
+    }
+    .time{
+      font-size: 14px;
+      color: #939BAB;
+      & > span{
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.check-project{
+  &-title{
+    margin:40px 0;
+    font-size: 15px;
+    color: #555;
+    padding-left: 40px;
+  }
+  &-item{
+    margin:32px 0;
+    font-size: 16px;
+    color: #222;
+    padding-left: 40px;
+    cursor: pointer;
+    &:hover > span{
+      color: #7a8ec1;
+
+    }
+  }
+}
+
+

@@ -1,0 +1,87 @@
+@charset "utf-8";
+/**
+ * @name: 底部按钮组
+ * @desc:
+ * @example:
+ * @depend:
+ * @date: 2017/03/05
+ * @author: qiangkailiang
+ */
+.user-controller {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  right: 1px;
+  height: 210px;
+  background-color: #FFFFFF;
+  border-top: 1px solid #f4f6fb;
+  .user-controller-footer {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: right;
+    .user-controller-send-btn {
+      margin-right: 30px;
+    }
+  }
+  .user-controller-input {
+    display: block;
+    background-color: #ffffff;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 115px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .user-controller-fastBtn {
+    padding: 10px 40px;
+    font-size: 0;
+    & > button {
+      cursor: pointer;
+      font-size: 16px;
+      color: #808080;
+      margin-right:40px;
+      &.reply-on{
+        color: #6B748C;
+        .icon-fastReply{
+          background: url("/image/img00/controller/home_question_activate.png") no-repeat;
+        }
+      }
+      &.result-on{
+        color: #6B748C;
+        .icon-userReply{
+          background: url("/image/img00/controller/home_reply_activate.png") no-repeat;
+        }
+      }
+      &.report-on{
+        color: #6B748C;
+        .icon-suggestion{
+          background: url("/image/img00/controller/home_suggestion_activate.png") no-repeat;
+        }
+      }
+      &.check-on{
+        color: #6B748C;
+        .icon-checkout{
+          background: url("/image/img00/controller/home_test_activate.png") no-repeat;
+        }
+      }
+      & > span{
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .user-controller-check {
+      float: right;
+    }
+    .user-controller-report {
+      float: right;
+      margin-right: 0;
+    }
+  }
+  .fastReply-on ~ .fast-reply {
+    display: block;
+  }
+}

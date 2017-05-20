@@ -1,0 +1,145 @@
+/**
+ * @name:
+ * @desc:
+ * @example:
+ * @depend:
+ * @date: 2017/2/15
+ * @author: qiangkailiang
+ */
+@charset "utf-8";
+@import "../../library/_common-modules";
+@import "../../modules/_mainHeader";
+@import "../../modules/_iconModule";
+//@import "../../modules/_formModule";
+
+.setting-inner {
+  height: 100%;
+}
+
+.center-inner {
+  text-align: center;
+  overflow: auto;
+  .center-inner-box {
+    display: inline-block;
+    padding-top: 100px;
+    text-align: left;
+  }
+}
+
+.setting-img {
+  text-align: center;
+  & > img {
+    @include circle(98px);
+    vertical-align: top;
+  }
+}
+
+.setting-center-form {
+  margin-top: 50px;
+}
+
+.setting-form-item {
+  font-size: 0;
+  margin: 20px 0;
+  &-name {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    text-align: right;
+    font-size: 16px;
+    margin-right: 20px;
+    color: #909090;
+
+    & > h4 {
+      font-weight: normal;
+    }
+  }
+  &-input {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #222;
+
+    & > input {
+      width: 315px;
+      height: 40px;
+      border-radius: 4px;
+      background-color: #fff;
+      padding: 12px 16px;
+      box-sizing: border-box;
+      border: 1px solid #E1E2E7;
+      transition: border 0.4s linear;
+      &:focus {
+        border: 1px solid #7a8ec1;
+      }
+    }
+  }
+}
+
+.setting-form-item-sex-selector {
+  padding-left: 16px;
+  font-size: 0;
+  .setting-form-item-sex {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 62px;
+    cursor: pointer;
+    color: #222;
+    font-size: 16px;
+    & > span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .sex-selector {
+    display: inline-block;
+    vertical-align: middle;
+    @include circle(15px, #f4f6fb);
+    margin-right: 15px;
+    &-on {
+      background-color: #4fc8d5;
+    }
+  }
+
+}
+
+.setting-form-btn {
+  padding-left: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  & > button {
+    width: 100%;
+  }
+}
+
+.icon-select-normal {
+  & > span {
+    vertical-align: middle;
+    padding-left: 8px;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background: url("/image/img00/login/1_choose_sel_small.png");
+    background-size: 100% 100%;
+  }
+  &.active {
+    &:before {
+      background: url("/image/img00/login/1_choose_nor_small.png");
+    }
+  }
+}
+
+.error-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #F23E34;
+  padding-left: 90px;
+  & > span {
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+}

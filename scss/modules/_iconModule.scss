@@ -1,0 +1,255 @@
+@charset "utf-8";
+/**
+ * @name: 小图标
+ * @desc:
+ * @example:
+ * @depend:
+ * @date: 2017/03/05
+ * @author: qiangkailiang
+ */
+.icon-logo {
+  display: inline-block;
+  background: url("/image/img00/header/logo_top.png") no-repeat;
+  background-size: 100% 100%;
+  width: 44px;
+  height: 44px;
+  vertical-align: -19px;
+}
+.icon-errorTips {
+  &:before {
+    content: '';
+    @include square(14px);
+    display: inline-block;
+    vertical-align: middle;
+    background: url("/image/img00/login/login_ error message.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.icon-downArrow:after {
+  content: '';
+  display: inline-block;
+  background: url("/image/img00/index/home_arrow_unfold.png") no-repeat;
+  background-size: 100% 100%;
+  width: 10px;
+  height: 10px;
+  vertical-align: 1px;
+  margin-left: 10px;
+}
+
+.icon-fastReply {
+  display: inline-block;
+  background: url("/image/img00/controller/home_question_default.png") no-repeat;
+  background-size: 100% 100%;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 9px;
+}
+.icon-userReply{
+  display: inline-block;
+  background: url("/image/img00/controller/home_reply_default.png") no-repeat;
+  background-size: 100% 100%;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 9px;
+}
+.icon-suggestion{
+  display: inline-block;
+  background: url("/image/img00/controller/home_suggestion_default.png") no-repeat;
+  background-size: 100% 100%;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 9px;
+}
+.icon-checkout{
+  display: inline-block;
+  background: url("/image/img00/controller/home_test_default.png") no-repeat;
+  background-size: 100% 100%;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 9px;
+}
+.icon-leftArrow{
+  display: inline-block;
+  background: url("/image/img00/qustion/qustion_arrow_left.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+
+.icon-rightArrow{
+  display: inline-block;
+  background: url("/image/img00/qustion/qustion_arrow_right.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.icon-fast-reply-config:before{
+  content: '';
+  display: inline-block;
+  background: url("/image/img00/controller/quiz_edit.png") no-repeat;
+  background-size: 100% 100%;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.icon-add-term:before{
+  content: '';
+  display: inline-block;
+  background: url("/image/img00/controller/question_add_group.png") no-repeat;
+  background-size: 100% 100%;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+}
+.icon-term-downArrow{
+  display: inline-block;
+  background: url("/image/img00/controller/arrow_unfold_activate.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition:all 0.2s linear;
+}
+.icon-add-question:before{
+  content: '';
+  display: inline-block;
+  background: url("/image/img00/controller/question_add_issue.png") no-repeat;
+  background-size: 100% 100%;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+}
+.icon-question-config{
+  display: inline-block;
+  background: url("/image/img00/controller/question_modify.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.icon-question-delete{
+  display: inline-block;
+  background: url("/image/img00/controller/question_delete.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.icon-member-add-cancel{
+  display: inline-block;
+  background: url("/image/img00/common/popup_close_default.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 18px;
+}
+.icon-close{
+  display: inline-block;
+  background: url("/image/img00/common/popup_close_default.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 18px;
+}
+.icon-disease-message{
+  &:before{
+    content: '';
+    display: inline-block;
+    background: url("/image/img00/check/1_preview_result.png") no-repeat;
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    vertical-align: -8px ;
+    margin-right: 9px;
+
+  }
+}
+.icon-disease-time{
+  &:before{
+    content: '';
+    display: inline-block;
+    background: url("/image/img00/check/1_preview_time.png") no-repeat;
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle ;
+    margin-right: 13px;
+  }
+}
+
+.icon-select-small:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/image/img00/check/1_choose_sel_small.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+}
+.icon-select-big:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/image/img00/check/1_choose_sel_big.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+
+}
+.icon-suggestion-preview:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/image/img00/check/1_suggestion_view.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+}
+.icon-search-tips{
+
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/image/img00/common/suggestion_search.png") no-repeat;
+  background-size: 100% 100%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  right: 18px;
+}
+
+.icon-downArrow-big:after{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/image/img00/common/arrow_unfold_big.png") no-repeat;
+  background-size: 100% 100%;
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+}
+.icon-detail:after{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/image/img00/common/arrow_enter.png") no-repeat;
+  background-size: 100% 100%;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+ }

@@ -1,0 +1,115 @@
+@charset "utf-8";
+/**
+ * @name: 主头部
+ * @desc:
+ * @example:
+ * @depend:
+ * @date: 2017/03/05
+ * @author: qiangkailiang
+ */
+@charset "utf-8";
+@import "../library/_common-modules";
+.main-inner {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+//头部
+.main-header {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding-left: 13px;
+  padding-right: 40px;;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 70px;
+  z-index: 5;
+  box-shadow: 0 2px 8px 0 #E5E9F4;
+}
+
+.main-header-search {
+  width: 350px;
+  float: left;
+  & > .main-search {
+    background-color: #eceff6;
+    width: 372px;
+    height: 32px;
+    line-height: 32px;
+    padding-left:14px;
+    & > input{
+      border-radius: 4px;
+    }
+  }
+
+}
+
+.main-header-title {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+  & > h1 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    color: #6B748C;
+    padding-left:10px;
+  }
+}
+
+
+.main-header-base-msg{
+  float: right;
+  text-align: left;
+  font-size: 0;
+  & > *{
+    display: inline-block;
+
+  }
+  .main-header-tips{
+    font-size:16px;
+    margin-right:30px;
+    color: #323D5E;
+  }
+  .main-header-config{
+    text-align: center;
+    font-size: 0;
+    &-item{
+      font-size:16px;
+      display: inline-block;
+      color: #00BEAF;
+      position: relative;
+      cursor: pointer;
+
+      a{
+        color: #00BEAF;
+        display: inline-block;
+      }
+      //&:after{
+      //  content: '';
+      //  width:1px;
+      //  height: 20px;
+      //  background-color: #e1e2e7;
+      //  position: absolute;
+      //  right: 0;
+      //  top: 50%;
+      //  margin-top:-10px;
+      //}
+    }
+  }
+  .main-header-line{
+    height: 18px;
+    width: 1px;
+    background: #E1E2E7;
+    border: none;
+    display: inline-block;
+    vertical-align: -3px;
+    margin:0 15px;
+
+  }
+}

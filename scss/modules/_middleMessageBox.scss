@@ -1,0 +1,65 @@
+@charset "utf-8";
+/**
+ * @name:中部消息框
+ * @desc:
+ * @example:
+ * @depend:
+ * @date: 2017/03/05
+ * @author: qiangkailiang
+ */
+.messageList-box {
+  padding: 40px 50px;
+  height: 70%;
+  overflow: auto;
+  background-color: #f6f9fa;
+  margin-left: 1px;
+  .messageList-item {
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    margin-bottom: 40px;
+    &.others-message {
+      .messageList-item-content {
+        float: left;
+        .messageList-item-text {
+          background-color: #fff;
+        }
+      }
+    }
+    &.my-message {
+      .messageList-item-content {
+        float: right;
+        .messageList-item-text {
+          background-color: #d4eff7;
+        }
+      }
+    }
+    &-content {
+      font-size: 0;
+      .messageList-item-img {
+        display: inline-block;
+        vertical-align: top;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        & > img {
+          width: 100%;
+          height: 100%;
+          vertical-align: top;
+          border-radius: 50%;
+        }
+      }
+      .messageList-item-text {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 625px;
+        padding: 7px 12px;
+        box-sizing: border-box;
+        font-size: 14px;
+        margin: 0 12px;
+        line-height: 1.5;
+        border-radius: 5px;
+      }
+    }
+  }
+}

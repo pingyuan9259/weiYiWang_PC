@@ -1,0 +1,443 @@
+@charset "utf-8";
+/**
+ * @name:病例单
+ * @desc:
+ * @example:
+ * @depend:
+ * @date: 2017/03/05
+ * @author: qiangkailiang
+ */
+.medical-record-title-text {
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  line-height: 50px;
+  & > h2 {
+    font-weight: normal;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+
+  }
+}
+
+.medical-record-title {
+  font-size: 0;
+  padding: 40px 30px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  .medical-record-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    & > img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      vertical-align: top;
+    }
+  }
+  .medical-record-userdata {
+    display: inline-block;
+    vertical-align: middle;
+    & > h3 {
+      color: #222;
+      font-size: 16px;
+      font-weight: normal;
+      .name {
+        vertical-align: middle;
+      }
+      & > p {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .medical-record-userdata-item {
+      color: #222;
+      font-size: 12px;
+      margin-top: 12px;
+    }
+  }
+}
+
+.medical-record-detail {
+  margin-top: 30px;
+}
+
+.tabsInner.medical-record-tabs {
+  text-align: center;
+  border-bottom: 1px solid #666666;
+  font-size: 0;
+  & > .tabsItem {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 5px;
+    margin: 0 2.5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    &.active {
+      border-bottom: 3px solid #7a8ec1;
+    }
+  }
+}
+
+
+
+.medical-record-main{
+  width:100%;
+  padding:25px 28px;
+  box-sizing: border-box;
+  height:517px;
+  overflow: auto;
+}
+
+.base-info{
+
+}
+
+.base-info li{margin-top:15px;}
+
+.base-title{
+  width:52px;
+  font-size: 13px;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-right:12px;
+  text-align:right;
+  display: inline-block;
+}
+.base-text{
+  font-size: 14px;
+  color: #222222;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.base-info select{
+  background: #F9F9F9;
+  border: 1px solid #E1E2E7;
+  border-radius: 4px;
+  padding:5px 10px;
+  font-size:14px;
+  line-height:14px;
+  min-width:86px;
+}
+
+.base-info .select-120{
+  min-width:123px;
+}
+
+.base-info .base-input{
+  background: #F9F9F9;
+  border: 1px solid #E1E2E7;
+  border-radius: 4px;
+  padding:5px 10px;
+  font-size:14px;
+  line-height:14px;
+  width:239px;
+}
+
+.base-info header{
+  position: relative;
+  margin-bottom:30px;
+  margin-top:50px;
+  z-index: 1;
+}
+.base-info header:before{
+  content:"";
+  position: absolute;
+  top:50%;
+  width:216px;
+  left:50%;
+  margin-left:-108px;
+  border: 1px solid #E1E2E7;
+}
+
+.base-info header h2{
+  font-size: 12px;
+  color: #AAAAAA;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin:0 auto;
+  width:56px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  z-index:10;
+}
+
+
+.base-info footer .base-saveBtn{
+  background: #7A8EC1;
+  border-radius: 4px;
+  width:70px;
+  height:30px;
+  line-height:30px;
+  font-size:14px;
+  color:#fff;
+  text-align:center;
+}
+
+.main-speak{}
+.main-speak header{
+  text-align: center;
+  margin-bottom:30px;
+}
+
+.main-speak .header img{
+
+}
+
+.main-speak .sick-info{
+  font-size: 14px;
+  color: #808080;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.main-speak .sick-title{
+  width:78px;
+  font-size: 13px;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-right:15px;
+  text-align:right;
+  display: inline-block;
+}
+
+.main-speak li{
+  margin-top:24px;
+}
+
+
+.sick-text{
+  font-size: 14px;
+  color: #222222;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.main-sick{
+}
+
+.main-sick li{
+  margin-top:24px;
+}
+
+.main-sick .main-title{
+  width: 52px;
+  font-size: 13px;
+  color: #555;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-right: 12px;
+  text-align: right;
+  display: inline-block;
+
+
+}
+.main-sick .main-text{
+  font-size: 14px;
+  color: #808080;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.main-sick header{
+  position: relative;
+  margin-bottom:30px;
+  margin-top:50px;
+}
+
+.main-sick header:before{
+  content:"";
+  position: absolute;
+  top:50%;
+  width:216px;
+  left:50%;
+  margin-left:-108px;
+  border: 1px solid #E1E2E7;
+}
+
+.main-sick header h2{
+  font-size: 12px;
+  color: #AAAAAA;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin:0 auto;
+  width:92px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  z-index:10;
+}
+
+.main-sick select{
+  background: #F9F9F9;
+  border: 1px solid #E1E2E7;
+  border-radius: 4px;
+  padding:5px 10px;
+  font-size:14px;
+  line-height:14px;
+  min-width:84px;
+}
+
+.main-sick .main-sick-input{
+  background: #F9F9F9;
+  border: 1px solid #E1E2E7;
+  border-radius: 4px;
+  padding:5px 10px;
+  font-size:14px;
+  line-height:14px;
+  width:235px;
+}
+
+
+.major-check {
+  header {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .video-check {
+    ul{
+      li{
+        margin:0 0 30px 0;
+        width:108px;
+        height:107px;
+        float:left;
+        text-align: center;
+
+        img{
+          width:80px;
+          height:80px;
+          border-radius: 4px;
+        }
+        p{
+          margin-top:12px;
+          font-size: 13px;
+          color: #555555;
+          letter-spacing: 0;
+          line-height: 13px;
+
+        }
+      }
+    }
+    ul:after{
+      content:"";
+      display: block;
+      clear:both;
+      visibility: hidden;
+    }
+  }
+
+}
+
+
+
+  .major-check header:before{
+    content:"";
+    position: absolute;
+    top:50%;
+    width:216px;
+    left:50%;
+    margin-left:-108px;
+    border: 1px solid #E1E2E7;
+  }
+
+
+
+
+  .major-check header h2{
+    font-size: 12px;
+    color: #AAAAAA;
+    letter-spacing: 0;
+    line-height: 12px;
+    margin:0 auto;
+    padding:0 10px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    z-index:10;
+    display: inline-block;
+  }
+  .medical-record-form .major-check input[type="text"]{
+    margin: 0 auto;
+    display: block;
+  }
+
+  .medical-record-form footer{
+    text-align: right;
+    margin-top:24px;
+  }
+
+  .medical-record-form footer .detail-saveBtn{
+    background: #7A8EC1;
+    border-radius: 4px;
+    width:70px;
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    color:#fff;
+    text-align:center;
+  }
+
+  .medical-record-form .medical-title{
+    width: 52px;
+    font-size: 13px;
+    color: #555;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-right: 15px;
+    text-align: right;
+    display: inline-block;
+
+  }
+
+  .medical-record-form .medical-text{
+    font-size: 14px;
+    color: #808080;
+    letter-spacing: 0;
+    line-height: 14px;
+  }
+
+  .medical-record-form input[type="text"]{
+    background: #F9F9F9;
+    border: 1px solid #E1E2E7;
+    border-radius: 4px;
+    padding:5px 10px;
+    font-size:14px;
+    line-height:14px;
+    width:238px;
+  }
+
+  .medical-record-form select{
+    background: #F9F9F9;
+    border: 1px solid #E1E2E7;
+    border-radius: 4px;
+    padding:5px 10px;
+    font-size:14px;
+    line-height:14px;
+    min-width:86px;
+  }
+
+  .medical-record-form textarea{
+    background: #F9F9F9;
+    border: 1px solid #E1E2E7;
+    border-radius: 4px;
+    width:260px;
+    height:150px;
+    vertical-align: top;
+  }
+
+  .medical-record-form li{margin-top:15px;}
+
+  .ml20{margin-left:23px;}
+  .ml15{margin-left:15px;}
+  .mt20{margin-top:20px;}

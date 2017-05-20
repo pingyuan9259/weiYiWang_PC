@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>员工管理</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/pages/employee/manage.css">
+</head>
+
+<body>
+<!--总容器-->
+<section class="main-inner">
+    <!--固定头部-->
+    <header class="main-header">
+        <section class="main-header-search">
+            <input class="main-search" type="text" placeholder="请输入患者姓名">
+        </section>
+        <article class="main-header-title">
+            <i class="icon-logo">喵</i>
+            <h1>唯医会诊</h1>
+        </article>
+        <article class="main-header-base-msg">
+            <article class="main-header-tips">
+                早上好，<span>喵喵喵</span>医生
+            </article>
+            <ul class="main-header-config">
+                <li class="main-header-config-item">在线</li>
+                <li class="main-header-config-item"><a href="../">个人设置</a></li>
+                <li class="main-header-config-item">退出</li>
+            </ul>
+        </article>
+    </header>
+    <!--筛选项-->
+    <section class="center-inner">
+        <section class="center-search-info">
+            <article class="center-search-input">
+                <input type="text" placeholder="请输出患者姓名"/>
+                <span class="center-search-role">
+                    <input type="text" placeholder="请选择角色"/>
+                    <span class="up"></span>
+                </span>
+                <button class="btn-primary">查询</button>
+            </article>
+        </section>
+        <section class="center-search-table">
+            <table>
+                <caption><h1>员工列表</h1><span class="table-add"><i class="add-img"></i>添加</span></caption>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>姓名</th>
+                    <th>角色</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>张晓华</td>
+                    <td>分诊医生</td>
+                    <td><span class="employee-status-leave">离线</span></td>
+                    <td>
+                        <button class="employee-leave">离职</button>
+                        <button class="employee-delete">删除</button>
+                    </td>
+                    <td>
+                        <span class="employee-editor"><i class="employee-editor-img"></i>编辑</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>张晓华</td>
+                    <td>分诊医生</td>
+                    <td><span class="employee-status-leave">离线</span></td>
+                    <td>
+                        <button class="employee-leave">离职</button>
+                        <button class="employee-delete">删除</button>
+                    </td>
+                    <td>
+                        <span class="employee-editor"><i class="employee-editor-img"></i>编辑</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>张晓华</td>
+                    <td>分诊医生</td>
+                    <td><span class="employee-status-leave">离线</span></td>
+                    <td>
+                        <button class="employee-leave">离职</button>
+                        <button class="employee-delete">删除</button>
+                    </td>
+                    <td>
+                        <span class="employee-editor"><i class="employee-editor-img"></i>编辑</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--<section class="maskers infoBox-tips show">
+            <section class="infoBox-inner">
+                <article class="infoBox-content">
+                    <article>
+                        <h2>添加员工</h2>
+                        <section class="infoBox-content-info">
+                            <ul>
+                                <li><span class="infoBox-text-title">姓名</span><input type="text" placeholder="输入姓名"/>
+                                </li>
+                                <li><span class="infoBox-text-title">性别</span>
+                                    <section class="checkbox-group">
+                                        <label class="on"><i class="checkbox"></i>男</label>
+                                        <label><i class="checkbox"></i>女</label>
+                                    </section>
+                                </li>
+                                <li>
+                                    <span class="infoBox-text-title">手机号</span><input type="text" placeholder="输入手机号"/>
+                                    <p class="warn-info"><i class="warn-info-img"></i>手机号码输入有误，请重新输入</p>
+                                </li>
+                                <li><span class="infoBox-text-title">邮箱</span><input type="text" placeholder="输入邮箱"/>
+                                    <p class="warn-info"><i class="warn-info-img"></i>邮箱格式输入有误，请重新输入</p>
+                                </li>
+                                <li><span class="infoBox-text-title">权限</span><select>
+                                    <option>分诊医生</option>
+                                </select></li>
+                                <li><span class="infoBox-text-title">初始密码</span><input type="password" placeholder="新的密码"/>
+                                </li>
+                            </ul>
+                        </section>
+                    </article>
+                </article>
+                <footer class="infoBox-btns">
+                    <button class="infoBox-saveBtn">保存</button>
+                </footer>
+            </section>
+            <section class="mask-close"></section>
+        </section>-->
+    </section>
+</section>
+<!--个人设置-->
+<script src="../../js/third-party/jquery/jquery-1.8.0.min.js"></script>
+<script src="../../js/third-party/nim/NIM_Web_NIM_v3.4.0.js"></script>
+<script src="../../js/common.js"></script>
+<script>
+    $('.employee-delete').on('click', function () {
+        common.gbw.confirmBox({
+            content: '确定删除该员工吗？删除后该员工的资料会在平台消失',
+            cancel: '取消',
+            ensure: '确定',
+            cancelCallback: function () {
+                console.log('取消');
+            },
+            ensureCallback: function () {
+                console.log('确认');
+            }
+        });
+    })
+
+    $('.table-add').on('click', function () {
+        var infos ='<section class="maskers infoBox-tips show">'+
+            '<section class="infoBox-inner">'+
+            '<article class="infoBox-content">'+
+            '<article>'+
+            '<h2>添加员工</h2>'+
+            '<section class="infoBox-content-info">'+
+            '<ul>'+
+            '<li><span class="infoBox-text-title">姓名</span><input type="text" placeholder="输入姓名"/>'+
+            '</li>'+
+            '<li><span class="infoBox-text-title">性别</span>'+
+            '<section class="checkbox-group">'+
+            '<label class="on"><i class="checkbox"></i>男</label>'+
+            '<label><i class="checkbox"></i>女</label>'+
+            '</section>'+
+            '</li>'+
+            '<li>'+
+            '<span class="infoBox-text-title">手机号</span><input type="text" placeholder="输入手机号"/>'+
+            '<p class="warn-info"><i class="warn-info-img"></i>手机号码输入有误，请重新输入</p>'+
+        '</li>'+
+        '<li><span class="infoBox-text-title">邮箱</span><input type="text" placeholder="输入邮箱"/>'+
+            '<p class="warn-info"><i class="warn-info-img"></i>邮箱格式输入有误，请重新输入</p>'+
+        '</li>'+
+        '<li><span class="infoBox-text-title">权限</span><select>'+
+            '<option>分诊医生</option>'+
+            '</select></li>'+
+            '<li><span class="infoBox-text-title">初始密码</span><input type="password" placeholder="新的密码"/>'+
+            '</li>'+
+            '</ul>'+
+            '</section>'+
+            '</article>'+
+            '</article>'+
+            '<footer class="infoBox-btns">'+
+            '<button class="infoBox-saveBtn">保存</button>'+
+            '</footer>'+
+            '</section>'+
+            '<section class="mask-close"></section>'+
+            '</section>'+
+            '<section class="mask-background"></section>';
+
+        common.gbw.infoBox({
+            html:infos
+        });
+    })
+
+    $('.employee-editor').on('click',function(){
+       var this_tr  =   $(this).parents('tr');
+       var text =  this_tr.find('td').eq(1).text();
+                   this_tr.find('td').eq(1).html('<input type="text" class="editor_info" value="'+text+'"/>');
+
+
+                   this_tr.find('td').eq(4).find('button').addClass('disable');
+                   this_tr.find('td').eq(this_tr.find('td').length-1).html('<section></section><button class="employee_saveBtn">保存</button><button class="employee_cancelBtn">取消</button></section>')
+    })
+
+
+    $('body').on('click','.employee_saveBtn',function(){
+        alert('保存成功！');
+
+    })
+</script>
+
+
+</body>
+
+</html>

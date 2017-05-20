@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import "../../library/_common-modules";
+@import "../../modules/_mainHeader";
+@import "../../modules/_iconModule";
+@import "../../modules/_userFilterList";
+@import "../../modules/_userStatusFilter";
+@import "../../modules/_bottomBtns";
+@import "../../modules/_middleMessageBox";
+@import "../../modules/_medicalRecord";
+@import "../../modules/_userList";
+@import "../../modules/_fastReply";
+@import "../../modules/_ImMedicalRecord";
+@import "../../modules/_masker";
+@import "../../modules/_modalBox";
+@import "../../modules/_fastReplyConfig";
+@import "../../modules/_used_reply";
+@import "../../modules/_checkSuggestion";
+@import "../../modules/_doctorMessage";
+@import "../../modules/_checkProject";
+@import "../../modules/_diseaseTeach";
+@import "../employee/commonMask";
+@import "../../modules/_configSuggestion";
+
+
+html,body{
+  font-family:"microsoft yahei";
+}
+//中部双飞翼布局
+.center-inner-userlist {
+  background-color: #fff;
+  color: #fff;
+  width: 385px;
+  float: left;
+  margin-left: -100%;
+  height: 100%;
+  border-right: 1px solid #ededed;
+}
+
+.center-inner-message {
+  float: left;
+  width: 100%;
+  height: 100%;
+  & > .layout-helper {
+    margin: 0 385px;
+    position: relative;
+    height: 100%;
+  }
+}
+
+.medical-record {
+  background-color: #fff;
+  width: 385px;
+  height: 100%;
+  float: left;
+  position: relative;
+  margin-left: -385px;
+}
+
+
